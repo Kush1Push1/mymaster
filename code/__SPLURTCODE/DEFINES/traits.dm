@@ -14,13 +14,6 @@
 #define TRAIT_GFLUID_DETECT				"genital_fluid_detect"
 #define TRAIT_ASHRESISTANCE				"ash_resistance"
 
-#define TRAIT_CHASTENED_ANUS 			"chastened_anus"
-#define TRAIT_IMPOTENT_ANUS		 		"impotent_anus"
-#define TRAIT_EDGINGONLY_ANUS			"edgingonly_anus"
-#define TRAIT_DISAPPOINTING_ANUS 		"disappointing_anus"
-#define TRAIT_OVERSTIM_ANUS 			"overstim_anus"
-#define TRAIT_HYPERSENS_ANUS 			"hypersens_anus"
-
 // Hyperstation traits
 #define TRAIT_PHARMA            		"hepatic_pharmacokinesis"
 #define TRAIT_CHOKE_SLUT				"choke_slut"
@@ -53,3 +46,12 @@
 #define TRAIT_MESSY						"messy"
 #define TRAIT_RESTORATIVE_METABOLISM	"restorative_metabolism"
 #define TRAIT_LEWD_JOB					"lewd_job"
+#define TRAIT_KISS_SLUT			"kiss_slut"
+
+// Chastity traits
+#define TRAIT_CHASTENED_ANUS "chastened_anus"
+#define TRAIT_IMPOTENT_ANUS "impotent_anus"
+#define TRAIT_EDGINGONLY_ANUS "edgingonly_anus"
+#define TRAIT_DISAPPOINTING_ANUS "disappointing_anus"
+#define TRAIT_OVERSTIM_ANUS "overstim_anus"
+#define TRAIT_HYPERSENS_ANUS "hypersens_anus"

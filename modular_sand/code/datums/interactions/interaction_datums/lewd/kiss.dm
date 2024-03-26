@@ -6,13 +6,6 @@
 	write_log_target = "was kissed by"
 	interaction_sound = null
 
-/datum/interaction/lewd/kiss/post_interaction(mob/living/user, mob/living/partner)
-	. = ..()
-	if(user.get_lust() < 100)
-		user.add_lust(12)
-	if(partner.get_lust() < 100)
-		partner.add_lust(12)
-
 /datum/interaction/lewd/kiss/display_interaction(mob/living/user, mob/living/partner)
 	if(user.a_intent == INTENT_HELP)
 		user.visible_message(

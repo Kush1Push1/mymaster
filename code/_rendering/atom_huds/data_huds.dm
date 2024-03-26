@@ -166,6 +166,9 @@
 	else
 		GLOB.suit_sensors_list -= src
 
+/mob/living/carbon/human/dummy/update_sensor_list()
+	return
+
 //called when a living mob changes health
 /mob/living/proc/med_hud_set_health()
 	var/image/holder = hud_list[HEALTH_HUD]

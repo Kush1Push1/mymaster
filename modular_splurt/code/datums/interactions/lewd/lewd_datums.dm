@@ -515,6 +515,19 @@
 
 	playlewdinteractionsound(target, 'sound/items/bikehorn.ogg', 40, 1, -1)
 
+/datum/interaction/lewd/kiss/post_interaction(mob/living/user, mob/living/partner)
+	. = ..()
+
+	//SPLURT EDIT START:
+	// Check if user has TRAIT_KISS_SLUT and increase their lust
+	if(HAS_TRAIT(user, TRAIT_KISS_SLUT))
+		user.handle_post_sex(LOW_LUST, null, partner)
+
+	// Check if partner has TRAIT_KISS_SLUT and increase their lust
+	if(HAS_TRAIT(partner, TRAIT_KISS_SLUT))
+		partner.handle_post_sex(LOW_LUST, null, user)
+	//SPLURT EDIT END
+
 /datum/interaction/lewd/kiss/display_interaction(mob/living/user, mob/living/partner)
 	if(!HAS_TRAIT(user, TRAIT_LEWD_JOB))
 		new /obj/effect/temp_visual/heart(user.loc)
