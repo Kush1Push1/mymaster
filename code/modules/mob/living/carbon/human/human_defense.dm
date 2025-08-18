@@ -508,20 +508,21 @@
 
 
 	//DAMAGE//
-	for(var/obj/item/bodypart/affecting in damaged)
-		affecting.receive_damage(acidity, 2*acidity)
+	if(!is_species(src, /datum/species/xeno)) // BLUEMOON ADD - xenohybrids_improvements - ксеногибриды не получают урон кислотой
+		for(var/obj/item/bodypart/affecting in damaged)
+			affecting.receive_damage(acidity, 2*acidity)
 
-		if(affecting.name == BODY_ZONE_HEAD)
-			if(prob(min(acidpwr*acid_volume/10, 90))) //Applies disfigurement
-				affecting.receive_damage(acidity, 2*acidity)
-				if(!HAS_TRAIT(src, TRAIT_ROBOTIC_ORGANISM)) // BLUEMOON ADD - роботы не кричат от боли
-					emote("scream")
-				facial_hair_style = "Shaved"
-				hair_style = "Bald"
-				update_hair()
-				ADD_TRAIT(src, TRAIT_DISFIGURED, TRAIT_GENERIC)
+			if(affecting.name == BODY_ZONE_HEAD)
+				if(prob(min(acidpwr*acid_volume/10, 90))) //Applies disfigurement
+					affecting.receive_damage(acidity, 2*acidity)
+					if(!HAS_TRAIT(src, TRAIT_ROBOTIC_ORGANISM)) // BLUEMOON ADD - роботы не кричат от боли
+						emote("scream")
+					facial_hair_style = "Shaved"
+					hair_style = "Bald"
+					update_hair()
+					ADD_TRAIT(src, TRAIT_DISFIGURED, TRAIT_GENERIC)
 
-		update_damage_overlays()
+			update_damage_overlays()
 
 	//MELTING INVENTORY ITEMS//
 	//these items are all outside of armour visually, so melt regardless.
