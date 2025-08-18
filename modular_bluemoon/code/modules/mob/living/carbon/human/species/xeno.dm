@@ -20,7 +20,7 @@
 	punchdamagehigh = 15
 	punchstunthreshold = 15 // Роняют на пол с шансом 20%
 	punchwoundbonus = 3 // Как у воксов
-	disarm_bonus = 25 // Обычные толчки такие же эффективные, как и пуш в стену
+	disarm_bonus = 12 // Обычные толчки такие же эффективные, как и пуш в стену
 
 /obj/item/organ/alien/resinspinner/hybrids
 	name = "hybrids resin spinner"
