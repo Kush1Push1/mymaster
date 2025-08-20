@@ -1,13 +1,13 @@
 /datum/species/xeno
-	mutant_organs = list(/obj/item/organ/alien/resinspinner/hybrids)
-	mutanteyes = /obj/item/organ/eyes/night_vision/hybrids
-	exotic_blood = /datum/reagent/toxin/acid
 	exotic_bloodtype = "X*"
 	exotic_blood_color = BLOOD_COLOR_XENO
 	typing_indicator_state = /obj/effect/overlay/typing_indicator/additional/alien
 	eye_type = ""
 	nojumpsuit = TRUE
-//	speedmod = -0.1 // Слегка быстрее человека
+	ass_image = 'icons/ass/assalien.png'
+	mutant_organs = list(/obj/item/organ/alien/resinspinner/hybrids)
+
+	mutanteyes = /obj/item/organ/eyes/night_vision/hybrids
 	burnmod = 1.3 // Лазер наносит 28 урона вместо 20
 	heatmod = 1.3 // Горячая атмосфера в 1.4 раз опаснее, как и поджёг
 	siemens_coeff = 1.3 // Урон от электризации шлюзов, молний и иного в 1.4 сильнее
@@ -15,7 +15,7 @@
 	punchdamagehigh = 12
 	punchstunthreshold = 12 // Роняют на пол с шансом 20%
 //	punchwoundbonus = 3 // Как у воксов
-//	disarm_bonus = 12 // Обычные толчки такие же эффективные, как и пуш в стену
+	disarm_bonus = 12 // Обычные толчки такие же эффективные, как и пуш в стену (только не роняют), т.к. иначе, для ксеносов имеет смысл только хармить, потому что там можно эффективнее валить на пол
 
 /obj/item/organ/alien/resinspinner/hybrids
 	name = "hybrids resin spinner"
@@ -24,7 +24,7 @@
 /obj/item/organ/eyes/night_vision/hybrids
 	name = "heat-seeking eyes"
 	desc = "These eyes seem to have increased sensitivity to bright light, offset by basic night vision. It seems they are rudimentary and their owner actually uses other senses to examine the world."
-	see_in_dark = 4
+	see_in_dark = 8
 	flash_protect = -1
 
 /obj/effect/proc_holder/alien/resin/hybrids // Ослабленная версия
