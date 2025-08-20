@@ -345,6 +345,8 @@ GLOBAL_VAR_INIT(bluemoon_criminal_quirk_commander_name, "")
 			if(ISSUER_TYPE_INTERN)
 				crime_description = "[pick(crime_number, "я кушать хочу...", "???", "Накажите там", "---")]"
 
+		crime_description += " (Ордер обязателен)"
+
 		// Добавление записи в БД
 		var/crime = GLOB.data_core.createCrimeEntry(crime_number, crime_description, crime_issued_by_officer, crime_time, TRUE)
 		GLOB.data_core.addMinorCrime(target_records.fields["id"], crime)
