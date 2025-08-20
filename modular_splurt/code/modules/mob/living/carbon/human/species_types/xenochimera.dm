@@ -15,6 +15,7 @@
 	burnmod =  1.15	//As vulnerable to burn as a Tajara.
 
 /datum/species/mammal/xenochimera/on_species_gain(mob/living/carbon/human/C, datum/species/old_species, pref_load)
+	. = ..() // BLUEMOON ADD - явная ошибка, этой штуки не было
 	if(ishuman(C))
 		C.verbs += /mob/living/carbon/human/proc/reconstitute_form
 		C.verbs += /mob/living/carbon/human/proc/sonar_ping
