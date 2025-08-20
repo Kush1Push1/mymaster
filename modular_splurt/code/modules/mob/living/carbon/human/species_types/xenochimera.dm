@@ -8,7 +8,7 @@
 	name = "Xenochimera"
 	id = SPECIES_XENOCHIMERA
 	mutant_bodyparts = list("mcolor" = "FFFFFF", "mcolor2" = "FFFFFF", "mcolor3" = "FFFFFF", "mam_snouts" = "None", "mam_tail" = "None", "mam_ears" = "None", "deco_wings" = "None",
-						"taur" = "None", "horns" = "None", "legs" = "Plantigrade", "meat_type" = "Mammalian")
+						"taur" = "None", "horns" = "None", "legs" = "Plantigrade", "meat_type" = "Mammalian", "mam_body_markings" = list()) // BLUEMOON EDIT - добавлено "mam_body_markingss = list()", чтобы могли использовать маркинги
 	species_traits = list(MUTCOLORS,EYECOLOR,HAIR,FACEHAIR,LIPS,WINGCOLOR,HAS_FLESH,HAS_BONE)
 	mutanteyes = /obj/item/organ/eyes/night_vision
 	brutemod = 0.8		//About as tanky to brute as a Unathi. They'll probably snap and go feral when hurt though.
