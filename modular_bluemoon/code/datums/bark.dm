@@ -150,3 +150,42 @@
 	soundpath = 'modular_bluemoon/sound/voice/barks/monkey.ogg'
 	minspeed = 5
 	maxspeed = 10
+
+/datum/bark/xenomorph_1
+	name = "Xenomorph 1"
+	id = "xenomorph1"
+	soundpath = 'modular_bluemoon/sound/voice/barks/xenomorph1.ogg'
+	maxspeed = 10
+
+/datum/bark/xenomorph_2
+	name = "Xenomorph 2"
+	id = "xenomorph2"
+	soundpath = 'modular_bluemoon/sound/voice/barks/xenomorph2.ogg'
+	minspeed = 4
+	maxspeed = 10
+
+/datum/bark/xenomorph_3
+	name = "Xenomorph 3"
+	id = "xenomorph3"
+	soundpath = 'modular_bluemoon/sound/voice/barks/xenomorph3.ogg'
+	minspeed = 4
+	maxspeed = 12
+
+/datum/bark/xenomorph_4
+	name = "Xenomorph 4"
+	id = "xenomorph4"
+	soundpath = 'modular_bluemoon/sound/voice/barks/xenomorph4.ogg'
+	maxspeed = 10
+
+/datum/bark/xenomorph_5
+	name = "Xenomorph 5"
+	id = "xenomorph5"
+	soundpath = 'modular_bluemoon/sound/voice/barks/xenomorph5.ogg'
+	minspeed = 4
+	maxspeed = 10
+
+/datum/bark/xenomorph_6
+	name = "Xenomorph 6"
+	id = "xenomorph6"
+	soundpath = 'modular_bluemoon/sound/voice/barks/xenomorph6.ogg'
+	maxspeed = 10
