@@ -8,9 +8,9 @@
 	eye_type = ""
 	nojumpsuit = TRUE
 //	speedmod = -0.1 // Слегка быстрее человека
-	burnmod = 1.5 // Лазер наносит 30 урона вместо 20
-	heatmod = 1.5 // Горячая атмосфера в 1.5 раз опаснее, как и поджёг
-	siemens_coeff = 1.5 // Урон от электризации шлюзов, молний и иного в 1.5 сильнее
+	burnmod = 1.3 // Лазер наносит 28 урона вместо 20
+	heatmod = 1.3 // Горячая атмосфера в 1.4 раз опаснее, как и поджёг
+	siemens_coeff = 1.3 // Урон от электризации шлюзов, молний и иного в 1.4 сильнее
 	punchdamagelow = 8
 	punchdamagehigh = 12
 	punchstunthreshold = 12 // Роняют на пол с шансом 20%
@@ -22,8 +22,8 @@
 	alien_powers = list(/obj/effect/proc_holder/alien/resin/hybrids)
 
 /obj/item/organ/eyes/night_vision/hybrids
-	name = "high-contrast eyes"
-	desc = "These eyes seem to have increased sensitivity to bright light, offset by basic night vision."
+	name = "heat-seeking eyes"
+	desc = "These eyes seem to have increased sensitivity to bright light, offset by basic night vision. It seems they are rudimentary and their owner actually uses other senses to examine the world."
 	see_in_dark = 4
 	flash_protect = -1
 
