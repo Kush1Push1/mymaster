@@ -50,6 +50,10 @@
 	to_chat(user, "<span class='notice'>You shape a [choice].</span>")
 	user.visible_message("<span class='notice'>[user] vomits up a thick purple substance and begins to shape it.</span>")
 
+	if(busy)
+		to_chat(user, span_warning("You are still shaping."))
+		return FALSE
+
 	busy = TRUE
 	if(!do_after(user, 20 SECONDS, target = get_turf(user)))
 		busy = FALSE
