@@ -55,7 +55,7 @@
 
 	if(M.getorgan(/obj/item/organ/alien/plasmavessel))
 		return
-	if(!user.getorgan(/obj/item/organ/alien/plasmavessel))
+	if(!user.getorgan(/obj/item/organ/alien/plasmavessel) && !user.getorgan(/obj/item/organ/alien/resinspinner/hybrids))
 		return
 
 	if(has_buckled_mobs())
