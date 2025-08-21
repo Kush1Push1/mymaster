@@ -14,7 +14,6 @@
 	punchdamagelow = 8
 	punchdamagehigh = 12
 	punchstunthreshold = 12 // Роняют на пол с шансом 20%
-//	punchwoundbonus = 3 // Как у воксов
 	disarm_bonus = 12 // Обычные толчки такие же эффективные, как и пуш в стену (только не роняют), т.к. иначе, для ксеносов имеет смысл только хармить, потому что там можно эффективнее валить на пол
 
 /obj/item/organ/alien/resinspinner/hybrids
