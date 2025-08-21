@@ -8,9 +8,9 @@
 	mutant_organs = list(/obj/item/organ/alien/resinspinner/hybrids)
 
 	mutanteyes = /obj/item/organ/eyes/night_vision/hybrids
-	burnmod = 1.3 // Лазер наносит 28 урона вместо 20
-	heatmod = 1.3 // Горячая атмосфера в 1.4 раз опаснее, как и поджёг
-	siemens_coeff = 1.3 // Урон от электризации шлюзов, молний и иного в 1.4 сильнее
+	burnmod = 1.3 // Лазер наносит 26 урона вместо 20
+	heatmod = 1.3 // Горячая атмосфера в 1.3 раз опаснее, как и поджёг
+	siemens_coeff = 1.3 // Урон от электризации шлюзов, молний и иного в 1.3 сильнее
 	punchdamagelow = 8
 	punchdamagehigh = 12
 	punchstunthreshold = 12 // Роняют на пол с шансом 20%
@@ -23,9 +23,9 @@
 
 /obj/item/organ/eyes/night_vision/hybrids
 	name = "heat-seeking eyes"
-	desc = "These eyes seem to have increased sensitivity to bright light, offset by basic night vision. It seems they are rudimentary and their owner actually uses other senses to examine the world."
+	desc = "These eyes seem to have incredible sensitivity to bright light, offset by basic night vision. It seems they are rudimentary and their owner actually uses other senses to examine the world."
 	see_in_dark = 8
-	flash_protect = -1
+	flash_protect = -3
 
 /obj/effect/proc_holder/alien/resin/hybrids // Ослабленная версия
 	desc = "Secrete tough malleable resin. Takes time to build and all structures are weak, but hey, it's free!"
